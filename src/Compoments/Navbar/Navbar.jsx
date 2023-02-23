@@ -3,19 +3,21 @@
 // import "./Navbar.css"
 //MODULOS DE CSS
 import styles from "./Navbar.module.css";
+import CartWidget from "../CartWidget/CartWidget";
 
 export const Navbar = () => {
-  let nombre = "frida";
 
   return (
     <div className={styles.containerNavbar}>
-      <h3>Logo</h3>
+      <img src="https://res.cloudinary.com/dkyr4y8ho/image/upload/v1677126357/IMG_6115_lncrab.jpg" 
+      alt="" 
+      style={{width: "20%", objectFit: "cover"}} />
       <ul className={styles.containerList}>
-        <li>Todas</li>
-        <li>Urbanas</li>
-        <li>Deportivas</li>
+        <li><a href="">Bestsellers</a></li>
+        <li><a href="">Lipsticks</a></li>
+        <li><a href="">Foundation</a></li>
       </ul>
-      <h3 style={{ backgroundColor: "red", padding: "10px" }}>Carrito</h3>
+      <CartWidget />
     </div>
   );
 };
