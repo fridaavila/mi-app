@@ -5,17 +5,22 @@
 import styles from "./Navbar.module.css";
 import CartWidget from "../CartWidget/CartWidget";
 
-export const Navbar = () => {
+import { Link } from "react-router-dom"
 
+export const Navbar = () => {
   return (
     <div className={styles.containerNavbar}>
-      <img src="https://res.cloudinary.com/dkyr4y8ho/image/upload/v1677126357/IMG_6115_lncrab.jpg" 
-      alt="" 
-      style={{width: "20%", objectFit: "cover"}} />
+      <Link to="/">
+        <img
+          src="https://res.cloudinary.com/dkyr4y8ho/image/upload/v1677126357/IMG_6115_lncrab.jpg"
+          alt=""
+          style={{ width: "50%", objectFit: "cover" }}
+        />
+      </Link>
       <ul className={styles.containerList}>
-        <li><a href="">Bestsellers</a></li>
-        <li><a href="">Lipsticks</a></li>
-        <li><a href="">Foundation</a></li>
+        <Link to="/" className={styles.navbarItem}> All Products </Link>
+        <Link to="/category/foundations" className={styles.navbarItem}> Foundations </Link>
+        <Link to="/category/tools" className={styles.navbarItem}> Tools </Link>
       </ul>
       <CartWidget />
     </div>
