@@ -9,6 +9,9 @@ import Login from "./Compoments/Login/Login.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ItemDeatilContainer from "./Compoments/ItemDetailContainer/ItemDeatilContainer.jsx";
+import ProductsBack from "./Compoments/ProductsBack/ProductsBack.js";
+import Form from "./Compoments/Form/Form.jsx";
+import CartContextProvider from "./context/CartContext.jsx";
 
 function App() {
 
@@ -20,21 +23,25 @@ function App() {
 
   return (
       <BrowserRouter>
+      <CartContextProvider>
 
       <Navbar />
 
-        <Routes> 
-          <Route path="/" element={ <ItemListContainer /> } />
-          <Route path="/category/:id" element={ <ItemListContainer /> } />
+      <Routes> 
+        <Route path="/" element={ <ItemListContainer /> } />
+        <Route path="/category/:categoryName" element={ <ItemListContainer /> } />
 
-          <Route path="/cart" element={ <Cart /> } />
-          <Route path="/item/:id" element={ <ItemDeatilContainer /> } />
-          <Route path="/login" element={ < Login /> } />
+        <Route path="/cart" element={ <Cart /> } />
+        <Route path="/item/:id" element={ <ItemDeatilContainer /> } />
+        <Route path="/login" element={ < Login /> } />
+        <Route path="/formulario" element={ < Form /> } />
 
-          <Route path="*" element={<h1>error 404: Not Found</h1>} />
+        <Route path="/productsBack" element={ <ProductsBack /> } />
 
-        </Routes>
+        <Route path="*" element={<h1>error 404: Not Found</h1>} />
+      </Routes>
 
+      </CartContextProvider>
       </BrowserRouter>
       
   );

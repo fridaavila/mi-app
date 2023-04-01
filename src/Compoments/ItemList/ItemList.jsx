@@ -1,6 +1,6 @@
 import Item from "../Item/Item";
 
-const ItemList = ({ items }) => {
+const ItemList = ( { items } ) => {
   
     return (
         <div style={ {
@@ -9,17 +9,17 @@ const ItemList = ({ items }) => {
             minHeight: "100vh",
             justifyContent: "space-evenly",
             alignItems: "center"
-        }
+        }}>
 
-        }>
             {
                 items.map((element)=>{
                     return <Item key={element.id} element={element} />
                 } )
             }
+
         </div>
     )
 
-};
+}
 
-export default ItemList;
+export default ItemList

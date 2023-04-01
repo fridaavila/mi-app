@@ -1,8 +1,12 @@
-import {useState} from "react"
+import {useEffect, useState} from "react"
 
 const ItemCount = ({stock, initial=1, onAdd}) => {
 
     const [contador , setContador] = useState (initial); // ---> []
+
+    useEffect(()=>{
+        setContador(initial)
+    }, [initial])
 
     const sumar = ()=> {
         if (contador < stock) {
@@ -21,9 +25,9 @@ const ItemCount = ({stock, initial=1, onAdd}) => {
     <div>
         <h1>estoy en el itemCount</h1>
         <h2>{contador}</h2>
-        <button onClick={sumar}>sumar</button>
-        <button onClick={restar}>restar</button>
-        <button onClick={ ()=> onAdd(contador)}>agregar al carrito</button>
+        <button onClick={restar}>-</button>
+        <button onClick={ ()=> onAdd(contador)}>add to cart</button>
+        <button onClick={sumar}>+</button>
     </div>
   )
 }

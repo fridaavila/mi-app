@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "foundation",
+      "img": "https://res.cloudinary.com/dkyr4y8ho/image/upload/v1677117616/FB30031_FB020_dyxezv.jpg"
+    },
+    {
+      "id": "2",
+      "title": "makeup",
+      "img": "https://res.cloudinary.com/dkyr4y8ho/image/upload/v1677118240/23732_cy1u8i.jpg"
+    },
+    {
+      "title": "Match stix trio",
+      "img": "https://www.google.com/search?q=fenty&rlz=1C1CHBF_enMX863MX863&sxsrf=AJOqlzVfgJD6eSDRnfQxP8JIpTmBO70Dvg:1678857174348&source=lnms&tbm=isch&sa=X&ved=2ahUKEwihuIWslt39AhWCh-4BHcYQCZUQ_AUoAXoECAEQAw&biw=1536&bih=713&dpr=2.5#imgrc=FL0gNKmKrJowmM",
+      "id": "F3-U6eV"
+    }
+  ]
+}

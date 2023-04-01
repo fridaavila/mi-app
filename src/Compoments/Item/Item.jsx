@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 
 const Item = ({ element }) => {
   return (
-    <Card sx={{ width: 345, height: 300 }}>
+    <Card sx={{ width: 345, height: 400 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt="producto"
         height="140"
         image={element.img}
       />
