@@ -3,9 +3,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { CartContext } from "../../context/CartContext";
-
-
-import ItemCount from "../ItemCount/ItemCount";
 import {db} from "../../firebaseConfig"
 import {getDoc, collection, doc} from "firebase/firestore"
 import ItemDetail from "../ItemDetail/ItemDetail";

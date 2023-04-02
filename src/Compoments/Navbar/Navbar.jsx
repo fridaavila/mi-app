@@ -31,15 +31,12 @@ export const Navbar = () => {
     <div className={styles.containerNavbar}>
       <Link to="/">
         <img
-          src="https://res.cloudinary.com/dkyr4y8ho/image/upload/v1677126357/IMG_6115_lncrab.jpg"
+          src="https://res.cloudinary.com/dkyr4y8ho/image/upload/v1677126357/Fenty/IMG_6115_lncrab.jpg"
           alt=""
           style={{ width: "50%", objectFit: "cover" }}
         />
       </Link>
       <ul className={styles.containerList}>
-        {/* <Link to="/" className={styles.navbarItem}> All Products </Link>
-        <Link to="/category/foundations" className={styles.navbarItem}> Foundations </Link>
-        <Link to="/category/tools" className={styles.navbarItem}> Tools </Link> */}
         {categoryList.map((category) => {
           return (
             <Link

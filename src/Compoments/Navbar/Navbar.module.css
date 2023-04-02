@@ -9,17 +9,15 @@
 
 }
 
-.containerlist {
+.containerList {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
 }
 
 .navbarItem {
     text-decoration: none;
     color: white;
-    
-    
+
 }
 

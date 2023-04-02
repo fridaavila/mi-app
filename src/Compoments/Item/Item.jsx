@@ -23,13 +23,13 @@ const Item = ({ element }) => {
           {element.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {element.description}
+          $ {element.price}
         </Typography>
       </CardContent>
       <CardActions>
         <Link to={`/item/${element.id}`}>
           <Button size="small" variant="contained" color="secondary">
-            Ver Detalles
+            See More
           </Button>
         </Link>
       </CardActions>

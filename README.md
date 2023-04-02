@@ -1,13 +1,17 @@
 # E-commerce de maquillaje
 
+Hola, este proyecto fue un e-comerce de maquillaje para el curso de React JS
+
 ### para clonar el repositorio ejecutar lo siguiente
 
 ```
-git clone github.fridaavila.mi-app
+gh repo clone fridaavila/mi-app
 ```
 
-### las dependencias del proyecto son las siguientes:
+### Este proyecto se construyo usando:
 
 - React router
 - Sweet Alert 2
 - Material UI
+- Firebase
+

@@ -58,19 +58,19 @@ const Cart = () => {
                   variant="contained"
                   onClick={() => deleteProductById(elemento.id)}
                 >
-                  Eliminar
+                  Delete
                 </Button>
               </div>
             );
           })}
-          <h1>El total del carrito es: {precioTotal}</h1>
+          <h1>Total Price: {precioTotal}</h1>
           {cart.length > 0 && (
             <div>
               <button onClick={() => setShowForm(true)}>
                 {" "}
-                Proceder al Pago{" "}
+                Checkout{" "}
               </button>
-              <button onClick={clear}>Limpiar Carrito </button>
+              <button onClick={clear}>Clean cart </button>
             </div>
           )}
           ;

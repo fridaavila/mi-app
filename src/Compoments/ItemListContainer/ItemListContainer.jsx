@@ -11,14 +11,10 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const {categoryName} = useParams();
-  console.log("categoryName: "+categoryName)
-
   const [items, setItems] = useState([]);
-
 
   useEffect(() => {
     const itemCollection = collection(db, "products");
-
     let consulta = undefined;
 
     if (categoryName) {
@@ -56,16 +52,7 @@ const ItemListContainer = () => {
 
   return (
     <div>
-      {/* {
-        items.length > 0 && <ItemList items={items} />
-      } */}
-
       <ItemList items={items} />
-      {/* <h1 style={{ color: items.length > 0 ? "red" : "blue" }}>
-        Cambio de color
-      </h1> */}
-
-      {/* <input type={ showPassword ? "text" : "password"} /> */}
     </div>
   );
 };
